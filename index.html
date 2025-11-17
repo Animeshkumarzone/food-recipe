@@ -29,11 +29,18 @@
     .feature-box{background:#fff;border-radius:15px;padding:25px;text-align:center;box-shadow:0 5px 20px #0001;font-size:18px;font-weight:600;}
 
     /* FOOD CARDS */
-    .cards{padding:60px 20px;max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:30px;}
+    .cards{padding:60px 20px;max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(3,2fr);gap:30px;}
     .card{background:#fff;border-radius:15px;box-shadow:0 6px 20px #0002;overflow:hidden;transition:.3s;cursor:pointer;}
     .card:hover{transform:translateY(-6px);}
     .card img{width:100%;height:220px;object-fit:cover;}
-    .card h3{padding:15px;font-size:20px;font-weight:700;}
+    .card h3{margin-bottom: 10px;font-size:20px;font-weight:700;}
+    .card-content {
+      padding: 15px;
+    }
+    .card-content p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
 
     /* BEST */
     .best{text-align:center;padding:70px 20px;background:#fff7f2;}
@@ -51,6 +58,15 @@
 
     /* FOOTER */
     footer{text-align:center;padding:25px;background:#222;color:#fff;font-size:16px;}
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #ff5722;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+    }
 
     /* MOBILE */
     @media(max-width:900px){.cards{grid-template-columns:repeat(2,1fr);} }
@@ -98,15 +114,51 @@
 <section class="cards">
   <div class="card">
     <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg" />
-    <h3>Grilled Chicken</h3>
+    <div class="card-content">
+      <h3>Grilled Chicken</h3>
+      <p>Juicy, smoky, and perfectly seasoned grilled chicken cooked to tender perfection — a healthy and flavourful meal for any time of the day.</p>
+      <a class="btn" href="recipedetails.html">View Recipe</a>
+    </div>
   </div>
   <div class="card">
     <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg" />
-    <h3>Veg Salad</h3>
+    <div class="card-content">
+      <h3>Veg Salad</h3>
+      <p>A refreshing bowl of crunchy vegetables tossed with a light dressing — simple, nutritious, and full of natural flavours.</p>
+      <a class="btn" href="recipedetails.html">View Recipe</a>
+    </div>
   </div>
   <div class="card">
     <img src="https://images.pexels.com/photos/2232/vegetables-italian-pizza-restaurant.jpg" />
-    <h3>Italian Pizza</h3>
+    <div class="card-content">
+      <h3>Italian Pizza</h3>
+      <p>Classic Italian-style pizza topped with fresh mozzarella, ripe tomatoes, basil leaves, and a crispy golden crust.</p>
+      <a class="btn" href="recipedetails.html">View Recipe</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg" />
+    <div class="card-content">
+      <h3>Cheese Pizza</h3>
+      <p>A cheesy delight loaded with melted mozzarella on a soft-yet-crispy crust — simple, comforting, and irresistible.</p>
+      <a class="btn" href="recipedetails.html">View Recipe</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg" />
+    <div class="card-content">
+      <h3>Veg Burger</h3>
+      <p>A hearty burger stuffed with fresh vegetables, crispy patty, and tangy sauces — perfect for a quick and satisfying bite.</p>
+      <a class="btn" href="recipedetails.html">View Recipe</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg" />
+    <div class="card-content">
+      <h3>Hakka Noodles</h3>
+      <p>Flavor-packed stir-fried noodles tossed with colourful veggies and authentic Indo-Chinese seasonings.</p>
+      <a class="btn" href="recipedetails.html">View Recipe</a>
+    </div>
   </div>
 </section>
 
